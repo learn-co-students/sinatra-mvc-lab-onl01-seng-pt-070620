@@ -5,7 +5,7 @@ class PigLatinizer
         
         first_letter = word[0].downcase
         if ["a", "e", "i", "o", "u"].include?(first_letter)
-            "#{word}way"
+            return "#{word}way"
         else
         consonants = []
         consonants << word[0]
@@ -16,12 +16,15 @@ class PigLatinizer
         end
       end
     end
+    "#{word[consonants.length..-1] + consonants.join + "ay"}"
+    end
+
+  def piglatinize_string(string)
     binding.pry
-    #"#{word[consonants.length..-1] + consonants.join + "ay"}"
+    a = string.split(" ")
+    b = a.map {|word| piglatinize(word)}
+    b.join(" ")
   end
-
-
-
 
 
 end
