@@ -16,7 +16,7 @@ class PigLatinizer
         end
       end
     end
-    #binding.pry
+    binding.pry
     #"#{word[consonants.length..-1] + consonants.join + "ay"}"
   end
 
