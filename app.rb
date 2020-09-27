@@ -6,6 +6,7 @@ class App < Sinatra::Base
     end
 
     post '/piglatinize' do
-        
+        phrase_from_user = params[:user_phrase]
+        #@analyzed_text = TextAnalyzer.new(params[:user_text])  
     end
 end
