@@ -6,9 +6,9 @@ class PigLatinizer
         vowels = ["a", "e", "i", "o", "u", "A", "E", "I", "O", "U"]
 
         if vowels.include?(@new_word[0])
-            piglatinized_word = vowel.join
+            piglatinized_word = vowel.join("")
         else
-            piglatinized_word = consonant.join
+            piglatinized_word = consonant.join("")
         end
     end
 
