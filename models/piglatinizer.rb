@@ -3,9 +3,7 @@ class PigLatinizer
     def piglatinize(input_str)
         input_str.split(" ").map{ |word| piglatinize_word(word)}.join(" ")
     end
-  
-    private
-  
+    
     def vowel?(char)
         char.match(/[aAeEiIoOuU]/)
     end
