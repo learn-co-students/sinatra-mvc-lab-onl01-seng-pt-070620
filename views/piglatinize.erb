@@ -1,0 +1,11 @@
+<h1>Pig-Latinized</h1>
+
+<h2>Pig-Latnized: <%= "#{@analyzed_text.piglatinize(@string)}"%></h2>
+
+
+<form method="post" action="/piglatinize">
+<p>Pig Latinizer! Enter your phrase:</p>
+<textarea name="user_phrase"></textarea>
+<br>
+<button type="submit" value="submit">Submit</button>
+</form>
